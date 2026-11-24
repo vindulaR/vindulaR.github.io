@@ -1,46 +1,18 @@
-// Intersection Observer for scroll animations
-const observerOptions = {
-    threshold: 0.2,
-    rootMargin: '0px'
-};
+// Years of experience since start date. HTML ships a static fallback, so the page works with JS disabled.
+(function () {
+    const startDate = new Date("2019-01-15");
+    const today = new Date();
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+    let years = today.getFullYear() - startDate.getFullYear();
+    const monthDiff = today.getMonth() - startDate.getMonth();
+
+    // Adjust if the anniversary hasn't happened yet this year
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < startDate.getDate())) {
+        years--;
+    }
+
+    ["expYears", "expYears2"].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = years;
     });
-}, observerOptions);
-
-// Observe sections
-document.addEventListener('DOMContentLoaded', () => {
-    const aboutSection = document.querySelector('.about-content');
-    const experienceSection = document.querySelector('.experience-content');
-    
-    if (aboutSection) {
-        observer.observe(aboutSection);
-    }
-    
-    if (experienceSection) {
-        observer.observe(experienceSection);
-    }
-
-});
-  
-  //Set work experience
-  // Set your start date
-  const startDate = new Date("2019-01-15");
-  const today = new Date();
-  
-  // Calculate difference
-  let yearsDiff = today.getFullYear() - startDate.getFullYear();
-  const monthDiff = today.getMonth() - startDate.getMonth();
-  
-  // Adjust if the anniversary hasn't happened yet this year
-  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < startDate.getDate())) {
-    yearsDiff--;
-  }
-  
-  document.getElementById("expYears").innerText = yearsDiff;
-  document.getElementById("expYears2").innerText = yearsDiff;
-
+})();
