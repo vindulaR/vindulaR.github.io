@@ -4,130 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./static/assets/images/favicon.png">
-    <title>Vindula Athukorala - Senior DevOps & SRE Professional</title>
-    <meta name="description" content="Senior DevOps & SRE professional specializing in cloud infrastructure, automation, and CI/CD pipelines. 7+ years of experience with AWS, Kubernetes, and Docker.">
+    <title>Vindula Athukorala - Senior SRE Professional</title>
+    <meta name="description" content="Senior SRE professional specializing in Cloud Infrastructure, Kubernetes, Automation, and Observability. 7+ years of experience with AWS, Kubernetes, and Docker.">
     <meta name="author" content="Vindula Athukorala">
-    
-    <meta property="og:title" content="Vindula Athukorala - Senior DevOps & SRE Professional">
-    <meta property="og:description" content="Senior DevOps & SRE professional specializing in cloud infrastructure, automation, and CI/CD pipelines.">
+    <meta name="theme-color" content="#0a0e14">
+
+    <meta property="og:title" content="Vindula Athukorala - Senior SRE Professional">
+    <meta property="og:description" content="Senior SRE professional specializing in Cloud Infrastructure, Kubernetes, Automation, and Observability.">
     <meta property="og:type" content="website">
-    
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-background">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-        </div>
-        
-        <div class="container hero-content">
-            <div class="profile-wrapper">
-                <div class="profile-glow"></div>
-                <img src="static/assets/images/profile-photo.jpeg" alt="DevOps Engineer Profile" class="profile-image">
-            </div>
-            
-            <div class="hero-text">
-                <h1 class="hero-title">Vindula Athukorala</h1>
-                <p class="hero-subtitle">Senior DevOps & SRE Professional | AWS | K8s | Linux</p>
-                <div class="tech-badges">
-                    <span class="badge">AWS</span>
-                    <span class="badge">Azure</span>
-                    <span class="badge">GCP</span>
-                    <span class="badge">Kubernetes</span>
-                    <span class="badge">Docker</span>
-                    <span class="badge">CI/CD</span>
-                    <span class="badge">Terraform</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">Bash</span>
-                </div>
-                <div class="hero-cta">
-                    <a href="https://kloudops.pro" target="_blank" rel="noopener noreferrer">
-                        <button class="btn-primary">Read my blog</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="scroll-indicator">
-            <svg class="scroll-arrow" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </div>
-    </section>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container about-content">
-            <div class="section-header">
-                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-                <div class="accent-line"></div>
+    <div class="terminal">
+        <!-- Window title bar -->
+        <header class="term-bar">
+            <div class="dots" aria-hidden="true">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
             </div>
-            
-            <div class="about-text">
-                <h3>Hello There! 👋</h3>
-                <p>I'm a senior DevOps & SRE professional with <span class="expYears" id="expYears"></span>+ years of experience in building and running secure, scalable AWS infrastructure for mission-critical applications. Having worked across globally recognised organisations, including WSO2, Pearson, Axinom, and Yenlo, I bring enterprise-grade engineering standards to every engagement.
-My core focus areas are AWS Infrastructure Architecture, Cloud Security, Site Reliability Engineering and Networking.</p><h3>🥷 Technical expertise:</h3><br/><p>&bull; Iac - Terraform</p><p>&bull; CI/CD tools - Azure DevOps, GitHub Actions, GitLab</p><p>&bull; GitOps: ArgoCD</p><p>&bull; Cloud Providers: Amazon Web Services (AWS), Microsoft Azure</p><p>&bull; Containerization: Docker, Kubernetes, AKS, EKS</p><p>&bull; Configuration Management: Ansible, Helm, Puppet</p><p>&bull; Scripting: Bash, Python</p><p>&bull; Version Control Systems - Github, Bitbucket, Azure DevOps, Gitlab</p><p>&bull; Linux administration</p><p>&bull; Service delivery tool - Service Now, JIRA</p><p>&bull; Observability - Prometheus, Grafana, ELK</p><p>&bull; Incident response tools - PagerDuty, Opsginie</p><p>&nbsp;</p>
-<h3>✔️ Experience:</h3><br/><p>&bull; Designing and implementing large-scale production infrastructure in AWS using Terraform.</p><p>&bull; Deploying and managing highly available, scalable Kubernetes deployments.</p><p>&bull; Develop automation scripts using Bash and Python.</p><p>&bull; Incident management and resolution.</p><p>&bull; Deploying, managing, and troubleshooting micro-service deployments.</p><p>&bull; Linux systems administration.</p><p>&bull; Cloud network configuration and troubleshooting including VPC routing, S2S VPN, ALB/NLB, CloudFront</p>
-            </div>
+            <div class="term-title">vindula@sre: ~ — bash</div>
+        </header>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number"><p><span  id="expYears2"></span>+</p></div>
-                    <div class="stat-label">Years Experience</div>
+        <!-- Navigation: plain anchor links styled as tabs -->
+        <nav class="term-nav" aria-label="Sections">
+            <a href="#hero">~/whoami</a>
+            <a href="#about">~/about</a>
+            <a href="#experience">~/experience</a>
+            <a href="#contact-me">~/contact</a>
+        </nav>
+
+        <main id="main" class="term-body">
+
+            <!-- Hero: whoami -->
+            <section class="block hero" id="hero">
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> whoami</div>
+
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Vindula Athukorala</h1>
+                        <p class="hero-subtitle"><span class="comment">#</span> Senior SRE Professional | AWS | K8s | Linux</p>
+
+                        <div class="prompt prompt-sub"><span class="user">vindula@sre</span><span class="path">:~$</span> echo $STACK</div>
+                        <ul class="tech-badges" aria-label="Tech stack">
+                            <li class="badge">AWS</li>
+                            <li class="badge">Azure</li>
+                            <li class="badge">GCP</li>
+                            <li class="badge">Kubernetes</li>
+                            <li class="badge">Docker</li>
+                            <li class="badge">CI/CD</li>
+                            <li class="badge">Terraform</li>
+                            <li class="badge">Python</li>
+                            <li class="badge">Bash</li>
+                        </ul>
+                    </div>
+
+                    <figure class="profile">
+                        <img src="./static/assets/images/profile-photo.jpeg" alt="DevOps Engineer Profile" class="profile-image" width="220" height="220">
+                        <figcaption>profile-photo.jpeg</figcaption>
+                    </figure>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Projects Deployed</div>
+            </section>
+
+            <!-- About -->
+            <section class="block about" id="about">
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> cat about.md</div>
+                <h2 class="section-title"><span class="hash">##</span> About Me</h2>
+
+                <div class="output">
+                    <h3 class="sub-title">Hello There!</h3>
+                    <p>I'm a senior SRE professional with <span class="expYears" id="expYears">7</span>+ years of experience in building and running secure, scalable AWS infrastructure for mission-critical applications. Having worked across globally recognised organisations, including WSO2, Pearson, Axinom, and Yenlo, I bring enterprise-grade engineering standards to every engagement.
+My core focus areas are AWS Infrastructure Architecture, Cloud Security, Site Reliability Engineering and Networking.</p>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container experience-content">
-            <div class="section-header">
-                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
-                <div class="accent-line"></div>
-            </div>
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> cat technical-expertise.yaml</div>
+                <div class="output panel">
+                    <h3 class="yaml-root"><span class="key">Technical expertise</span>:</h3>
+                    <ul class="yaml-list">
+                        <li>Iac - Terraform</li>
+                        <li>CI/CD tools - Azure DevOps, GitHub Actions, GitLab</li>
+                        <li>GitOps: ArgoCD</li>
+                        <li>Cloud Providers: Amazon Web Services (AWS), Microsoft Azure</li>
+                        <li>Containerization: Docker, Kubernetes, AKS, EKS</li>
+                        <li>Configuration Management: Ansible, Helm, Puppet</li>
+                        <li>Scripting: Bash, Python</li>
+                        <li>Version Control Systems - Github, Bitbucket, Azure DevOps, Gitlab</li>
+                        <li>Linux administration</li>
+                        <li>Service delivery tool - Service Now, JIRA</li>
+                        <li>Observability - Prometheus, Grafana, ELK</li>
+                        <li>Incident response tools - PagerDuty, Opsginie</li>
+                    </ul>
+                </div>
 
-            <div class="experience-list">
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Managed Services Engineer</h3>
-                            <p class="experience-company">Yenlo Lanka (PVT) LTD</p>
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> cat experience.log</div>
+                <div class="output panel">
+                    <h3 class="yaml-root"><span class="key">Experience</span>:</h3>
+                    <ul class="log-list">
+                        <li>Designing and implementing large-scale production infrastructure in AWS using Terraform.</li>
+                        <li>Deploying and managing highly available, scalable Kubernetes deployments.</li>
+                        <li>Develop automation scripts using Bash and Python.</li>
+                        <li>Incident management and resolution.</li>
+                        <li>Deploying, managing, and troubleshooting micro-service deployments.</li>
+                        <li>Linux systems administration.</li>
+                        <li>Cloud network configuration and troubleshooting including VPC routing, S2S VPN, ALB/NLB, CloudFront</li>
+                    </ul>
+                </div>
+
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> ./stats</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number"><span id="expYears2">7</span>+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projects Deployed</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience: git log -->
+            <section class="block experience" id="experience">
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> git log --career</div>
+                <h2 class="section-title"><span class="hash">##</span> Work Experience</h2>
+
+                <ol class="commit-list">
+                    <li class="commit">
+                        <div class="commit-head">
+                            <span class="commit-ref">(HEAD -&gt; present)</span>
+                            <span class="experience-period">November 2024 - Present</span>
                         </div>
-                        <span class="experience-period">November 2024 - Present</span>
-                    </div>
-                    
-                    <p class="experience-description">
-                        Provide 24x7 support for WSO2 and Boomi customer deployments. Troubleshoot and resolve customer deployment issues. 
-                    </p>
-                    
-                    <div class="tech-tags">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">WSO2</span>
-                        <span class="tech-tag">Kubernetes</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Customer support</span>
-                        <span class="tech-tag">Site Reliability Engineering</span>
-                    </div>
-                </div>
+                        <h3 class="experience-title">Managed Services Engineer</h3>
+                        <p class="experience-company">@ Yenlo Lanka (PVT) LTD</p>
+                        <p class="experience-description">Provide 24x7 support for WSO2 and Boomi customer deployments. Troubleshoot and resolve customer deployment issues.</p>
+                        <ul class="tech-tags" aria-label="Technologies">
+                            <li class="tech-tag">AWS</li>
+                            <li class="tech-tag">Terraform</li>
+                            <li class="tech-tag">WSO2</li>
+                            <li class="tech-tag">Kubernetes</li>
+                            <li class="tech-tag">Python</li>
+                            <li class="tech-tag">Customer support</li>
+                            <li class="tech-tag">Site Reliability Engineering</li>
+                        </ul>
+                    </li>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Senior DevOps Engineer</h3>
-                            <p class="experience-company">Axinom (PVT) LTD</p>
+                    <li class="commit">
+                        <div class="commit-head">
+                            <span class="experience-period">June 2023 - November 2024</span>
                         </div>
-                        <span class="experience-period"> June 2023 - November 2024</span>
-                    </div>
-                    
-                    <p class="experience-description">
+                        <h3 class="experience-title">Senior DevOps Engineer</h3>
+                        <p class="experience-company">@ Axinom (PVT) LTD</p>
                         <ul class="experience-description">
                             <li>Provision highly available and scalable infrastructure in Azure, GCP with Terraform.</li>
                             <li>Manage and provision highly available kubernetes clusters (AKS, GKE).</li>
@@ -135,28 +164,22 @@ My core focus areas are AWS Infrastructure Architecture, Cloud Security, Site Re
                             <li>Design and implement CI/CD pipelines with Azure DevOps.</li>
                             <li>Write automation scripts with Python and Bash.</li>
                         </ul>
-                    </p>
-                    
-                    <div class="tech-tags">
-                        <span class="tech-tag">Azure</span>
-                        <span class="tech-tag">Azure DevOps</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">Kubernetes</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">DevOps</span>
-                    </div>
-                </div>
+                        <ul class="tech-tags" aria-label="Technologies">
+                            <li class="tech-tag">Azure</li>
+                            <li class="tech-tag">Azure DevOps</li>
+                            <li class="tech-tag">Terraform</li>
+                            <li class="tech-tag">Kubernetes</li>
+                            <li class="tech-tag">Python</li>
+                            <li class="tech-tag">DevOps</li>
+                        </ul>
+                    </li>
 
-                 <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Senior Systems Engineer</h3>
-                            <p class="experience-company">WSO2 Lanka (PVT) LTD </p>
+                    <li class="commit">
+                        <div class="commit-head">
+                            <span class="experience-period">September 2020 - June 2023</span>
                         </div>
-                        <span class="experience-period"> September 2020 - June 2023</span>
-                    </div>
-                    
-                    <p class="experience-description">
+                        <h3 class="experience-title">Senior Systems Engineer</h3>
+                        <p class="experience-company">@ WSO2 Lanka (PVT) LTD</p>
                         <ul class="experience-description">
                             <li>Design, setting up and managing WSO2 managed services customer deployments on cloud and on-premise.</li>
                             <li>Use automation tools to deploy WSO2 application.</li>
@@ -165,28 +188,22 @@ My core focus areas are AWS Infrastructure Architecture, Cloud Security, Site Re
                             <li>Proactively monitoring infrastructure resources and services in order to provide 99.99% guaranteed service uptime by 24x7x365 support.</li>
                             <li>Provide migration support for infrastructure.</li>
                         </ul>
-                    </p>
-                    
-                    <div class="tech-tags">
-                        <span class="tech-tag">Azure</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">Kubernetes</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">DevOps</span>
-                    </div>
-                </div>
+                        <ul class="tech-tags" aria-label="Technologies">
+                            <li class="tech-tag">Azure</li>
+                            <li class="tech-tag">AWS</li>
+                            <li class="tech-tag">Terraform</li>
+                            <li class="tech-tag">Kubernetes</li>
+                            <li class="tech-tag">Python</li>
+                            <li class="tech-tag">DevOps</li>
+                        </ul>
+                    </li>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Associate Application Engineer (DevOps)</h3>
-                            <p class="experience-company">Pearson Lanka (PVT) LTD</p>
+                    <li class="commit">
+                        <div class="commit-head">
+                            <span class="experience-period">January 2019 - September 2020</span>
                         </div>
-                        <span class="experience-period"> January 2019 - September 2020</span>
-                    </div>
-                    
-                    <p class="experience-description">
+                        <h3 class="experience-title">Associate Application Engineer (DevOps)</h3>
+                        <p class="experience-company">@ Pearson Lanka (PVT) LTD</p>
                         <ul class="experience-description">
                             <li>Driving a DevSecOps approach.</li>
                             <li>Focus on automation and tool development.</li>
@@ -194,85 +211,71 @@ My core focus areas are AWS Infrastructure Architecture, Cloud Security, Site Re
                             <li>Interface effectively with the network engineering teams to implement security solutions and controls.</li>
                             <li>Maintain AWS accounts on-boarded to PCS</li>
                             <li>Create new AWS accounts for applications and on-board those accounts to PCS</li>
-                            <li>Deploy application on AWS and Implement jenkins CI/CD </li>
+                            <li>Deploy application on AWS and Implement jenkins CI/CD</li>
                         </ul>
-                    </p>
-                    
-                    <div class="tech-tags">
-                        <span class="tech-tag">Azure</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">Kubernetes</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">DevOps</span>
-                    </div>
-                </div>
+                        <ul class="tech-tags" aria-label="Technologies">
+                            <li class="tech-tag">Azure</li>
+                            <li class="tech-tag">AWS</li>
+                            <li class="tech-tag">Terraform</li>
+                            <li class="tech-tag">Kubernetes</li>
+                            <li class="tech-tag">Python</li>
+                            <li class="tech-tag">DevOps</li>
+                        </ul>
+                    </li>
 
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-title">Intern - Application Engineering (DevOps)</h3>
-                            <p class="experience-company">Pearson Lanka (PVT) LTD</p>
+                    <li class="commit">
+                        <div class="commit-head">
+                            <span class="experience-period">January 2018 - December 2019</span>
                         </div>
-                        <span class="experience-period"> January 2018 - December 2019</span>
-                    </div>
-                    
-                    <p class="experience-description">
+                        <h3 class="experience-title">Intern - Application Engineering (DevOps)</h3>
+                        <p class="experience-company">@ Pearson Lanka (PVT) LTD</p>
                         <ul class="experience-description">
                             <li>Cloud environments: AWS</li>
-                            <li>CI/CD tools: Jenkins, Rundeck&nbsp;</li>
+                            <li>CI/CD tools: Jenkins, Rundeck</li>
                             <li>Scripting: Shell, Python</li>
                         </ul>
-                    </p>
-                    
-                    <div class="tech-tags">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">RunDeck</span>
-                        <span class="tech-tag">Jenkins</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">DevOps</span>
-                    </div>
-                </div>
+                        <ul class="tech-tags" aria-label="Technologies">
+                            <li class="tech-tag">AWS</li>
+                            <li class="tech-tag">RunDeck</li>
+                            <li class="tech-tag">Jenkins</li>
+                            <li class="tech-tag">Python</li>
+                            <li class="tech-tag">DevOps</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
 
+            <!-- Contact: curl -->
+            <section class="block contact-section" id="contact-me">
+                <div class="prompt"><span class="user">vindula@sre</span><span class="path">:~$</span> curl -X POST /contact</div>
+                <h2 class="section-title"><span class="hash">##</span> AWS &amp; K8s Consultation</h2>
 
-            </div>
-        </div>
-    </section>
+                <p class="form-tagline"><span class="comment">#</span> Available for specialized architecture, infrastructure automation, and optimization consulting on <strong class="highlight-tech">AWS</strong> and <strong class="highlight-tech">Kubernetes</strong>.</p>
 
-    <!-- Contact Me Section -->
-    <section class="contact-section" id="contact-me">
-        <div class="container contact-container">
-            <div class="section-header">
-                <h2 class="section-title"><span class="gradient-text">AWS</span> & <span class="gradient-text">K8s</span> Consultation</h2>
-                <div class="accent-line"></div>
-            </div>
-
-            <div class="contact-card">
-                <div class="form-tagline">
-                    <p>Available for specialized architecture, infrastructure automation, and optimization consulting on <strong class="highlight-tech">AWS</strong> and <strong class="highlight-tech">Kubernetes</strong>.</p>
-                </div>
-
-                <form action="https://formspree.io/f/mbdvqjvv" method="POST" class="contact-form">
+                <form action="https://formspree.io/f/mbdvqjvv" method="POST" class="contact-form panel">
                     <div class="form-group">
-                        <label for="email">Your Email</label>
+                        <label for="email"><span class="flag">--email</span> Your Email</label>
                         <input type="email" id="email" name="email" placeholder="name@company.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
+                        <label for="message"><span class="flag">--data</span> Your Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Describe your infrastructure project or requirements..." required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary form-submit-btn">Send Message</button>
+                    <button type="submit" class="btn-primary">Send Message</button>
                 </form>
-            </div>
-        </div>
-    </section>
- <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
+            </section>
+
+            <!-- Idle prompt -->
+            <div class="prompt prompt-idle"><span class="user">vindula@sre</span><span class="path">:~$</span> <span class="cursor" aria-hidden="true"></span></div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
             <p class="footer-text">&copy; 2026 Vindula Athukorala. All rights reserved.</p>
-            <p class="footer-tagline">I design, secure, and scale high-available cloud infrastructure with AWS and K8s.</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+            <p class="footer-tagline"><span class="comment">#</span> I design, secure, and scale high-available cloud infrastructure with AWS and K8s.</p>
+        </footer>
+    </div>
+
+    <script src="./script.js" defer></script>
 </body>
 </html>
